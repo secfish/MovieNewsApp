@@ -1,0 +1,27 @@
+{
+  "movieNewsApp": {
+    "twitter": {
+      "home": {
+        "title": "Twitters",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Twitter",
+        "createOrEditLabel": "创建或编辑 Twitter",
+        "notFound": "No Twitters found"
+      },
+      "created": "Twitter {{ param }} 创建成功",
+      "updated": "Twitter {{ param }} 更新成功",
+      "deleted": "Twitter {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Twitter {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Twitter"
+      },
+      "id": "ID",
+      "content": "Content",
+      "pubDate": "Pub Date",
+      "publisher": "Publisher",
+      "movie": "Movie"
+    }
+  }
+}

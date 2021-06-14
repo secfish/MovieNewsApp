@@ -1,0 +1,34 @@
+entity Movie {
+    name String required,
+    director String,
+    synopsis String,
+    comment  String,
+    startDate Instant, 
+    image    ImageBlob
+}
+
+entity News{
+    headerline String required,
+    url        String required,
+    pubDate    Instant,
+    image      ImageBlob
+}
+
+entity Twitter{
+    content String required,
+    pubDate  Instant,
+    publisher String 
+}
+
+relationship OneToMany {
+    Movie{twitter} to Twitter{movie}
+}
+
+
+relationship ManyToOne {
+    Movie{user(login)} to User,
+    News{user(login)}  to User
+} 
+
+dto * with mapstruct
+paginate * with infinite-scroll

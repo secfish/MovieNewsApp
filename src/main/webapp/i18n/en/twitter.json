@@ -1,0 +1,27 @@
+{
+  "movieNewsApp": {
+    "twitter": {
+      "home": {
+        "title": "Twitters",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Twitter",
+        "createOrEditLabel": "Create or edit a Twitter",
+        "notFound": "No Twitters found"
+      },
+      "created": "A new Twitter is created with identifier {{ param }}",
+      "updated": "A Twitter is updated with identifier {{ param }}",
+      "deleted": "A Twitter is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Twitter {{ id }}?"
+      },
+      "detail": {
+        "title": "Twitter"
+      },
+      "id": "ID",
+      "content": "Content",
+      "pubDate": "Pub Date",
+      "publisher": "Publisher",
+      "movie": "Movie"
+    }
+  }
+}

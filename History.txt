@@ -1,0 +1,9 @@
+History:
+
+1. create new file: entity.jdl 
+2. disable sending email while registering new user
+    file:UserResource.java
+    method: createUser()
+             // send email to confirm user if need 
+            // mailService.sendCreationEmail(newUser);
+

@@ -1,0 +1,36 @@
+{
+  "name": "Twitter",
+  "fields": [
+    {
+      "fieldName": "content",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pubDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "publisher",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "movie",
+      "otherEntityRelationshipName": "twitter",
+      "relationshipName": "movie"
+    }
+  ],
+  "entityTableName": "twitter",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210610004621"
+}

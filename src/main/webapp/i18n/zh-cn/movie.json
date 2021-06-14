@@ -1,0 +1,31 @@
+{
+  "movieNewsApp": {
+    "movie": {
+      "home": {
+        "title": "Movies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Movie",
+        "createOrEditLabel": "创建或编辑 Movie",
+        "notFound": "No Movies found"
+      },
+      "created": "Movie {{ param }} 创建成功",
+      "updated": "Movie {{ param }} 更新成功",
+      "deleted": "Movie {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Movie {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Movie"
+      },
+      "id": "ID",
+      "name": "Name",
+      "director": "Director",
+      "synopsis": "Synopsis",
+      "comment": "Comment",
+      "startDate": "Start Date",
+      "image": "Image",
+      "twitter": "Twitter",
+      "user": "User"
+    }
+  }
+}
