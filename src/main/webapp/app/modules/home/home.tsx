@@ -18,7 +18,7 @@ export const Home = (props: IHomeProp) => {
       </Col>
       <Col md="9">
         <h2>
-          Welcome, Movie and News application!
+          Welcome, Demo application!
         </h2>
         <p className="lead">
           This is {account.login} homepage
@@ -61,7 +61,7 @@ export const Home = (props: IHomeProp) => {
               Movies list
             </a>
           </li>
-          <li>
+          {/*<li>
             <a href="/news" target="_blank" rel="noopener noreferrer">
               News list 
             </a>
@@ -70,7 +70,7 @@ export const Home = (props: IHomeProp) => {
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
               github link
             </a>
-          </li>
+          </li>*/}
         </ul>
 
       </Col>

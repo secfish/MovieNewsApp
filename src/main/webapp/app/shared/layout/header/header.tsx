@@ -28,6 +28,8 @@ const Header = (props: IHeaderProps) => {
     props.onLocaleChange(langKey);
   };
 
+  const renderDevRibbon = () => null;
+  /*
   const renderDevRibbon = () =>
     props.isInProduction === false ? (
       <div className="ribbon dev">
@@ -36,7 +38,7 @@ const Header = (props: IHeaderProps) => {
         </a>
       </div>
     ) : null;
-
+  */
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   /* jhipster-needle-add-element-to-menu - JHipster will add new menu items here */

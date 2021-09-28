@@ -16,12 +16,14 @@ const adminMenuItems = (
     <MenuItem icon="heart" to="/admin/health">
       <Translate contentKey="global.menu.admin.health">Health</Translate>
     </MenuItem>
+    {/*
     <MenuItem icon="cogs" to="/admin/configuration">
       <Translate contentKey="global.menu.admin.configuration">Configuration</Translate>
     </MenuItem>
     <MenuItem icon="tasks" to="/admin/logs">
       <Translate contentKey="global.menu.admin.logs">Logs</Translate>
     </MenuItem>
+    */}
     {/* jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here */}
   </>
 );
