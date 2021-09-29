@@ -1,9 +1,8 @@
 # MovieNewsApp
 
-This application was created to fetch latest movies and news from internet. 
+This application was created to fetch latest movies and news from internet.
 
-
-## Development
+## 1 Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 
@@ -27,9 +26,9 @@ auto-refreshes when files change on your hard drive.
 npm start
 ```
 
-## Building 
+## 2 Building
 
-### Packaging as jar
+### 2.1 Packaging as jar
 
 To build the final jar and optimize the MovieNewsApp application for production, run:
 
@@ -46,8 +45,24 @@ java -jar target/*.jar
 
 Then navigate to [https://localhost:8080](https://localhost:8080) in your browser.
 
+### 2.2 Docker
 
-## Testing
+```
+// build docker image 
+docker build -t demo-app --file Dockerfile . 
+
+// list docker image 
+docker image list 
+
+// run docker image 
+docker run -it -p8080:8080 demo-app
+
+Then navigate to [https://localhost:8080](https://localhost:8080) in your browser.
+```
+
+## 3 Testing
+
+### 3.1 Server testing 
 
 To launch your application's tests, run:
 
@@ -55,7 +70,7 @@ To launch your application's tests, run:
 ./mvnw verify
 ```
 
-### Client tests
+### 3.2 Client tests
 
 Unit tests are run by [Jest][]. They're located in [src/test/javascript/](src/test/javascript/) and can be run with:
 
@@ -63,9 +78,7 @@ Unit tests are run by [Jest][]. They're located in [src/test/javascript/](src/te
 npm test
 ```
 
-For more information, refer to the [Running tests page][].
-
-### Code quality
+### 3.3 Code quality test
 
 Sonar is used to analyse code quality. You can start a local Sonar server (accessible on http://localhost:9001) with:
 
@@ -88,4 +101,3 @@ If you need to re-run the Sonar phase, please be sure to specify at least the `i
 ```
 ./mvnw initialize sonar:sonar
 ```
-
